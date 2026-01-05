@@ -506,70 +506,118 @@ button {
     padding-left: 10px;
 }
 /* --- 商品評論區專屬 --- */
+沒問題，這份 CSS 專門針對商品評論專區進行了對齊優化。
+
+它解決了你截圖中「內容往左縮」以及「排版歪斜」的問題，確保評論內容能精確對齊用戶資訊，並與整體網頁寬度保持一致。
+
+商品評論專區最終版 CSS
+CSS
+
+/* =========================================
+   商品評論與評分專區 (置中對齊優化)
+   ========================================= */
+
+/* 1. 評論區整體容器：確保與商品頁其他部分寬度一致並置中 */
 .product-reviews {
-    margin-top: 80px;
+    width: 100%;           /* 繼承 content-container 的 80% 寬度 */
+    max-width: 1200px;     /* 限制最大寬度增加閱讀舒適度 */
+    margin: 80px auto 0;   /* auto 達成水平置中，80px 與上方相關產品隔開 */
     padding-top: 50px;
-    border-top: 1px solid rgba(0,0,0,0.1);
-    width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.1); /* 頂部淺線分隔 */
+    text-align: left;      /* 確保所有標題內容預設靠左 */
 }
 
+/* 2. 標題樣式：使用品牌手寫字體 */
 .reviews-title {
     font-family: "Permanent Marker", cursive;
     font-size: 32px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
+/* 3. 評分總覽區域：分數在左，按鈕在右 */
 .rating-summary {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
+    align-items: flex-end; /* 讓分數底部與按鈕底部對齊 */
+    margin-bottom: 60px;
 }
 
 .score-num {
-    font-size: 48px;
+    font-size: 64px;       /* 放大分數顯示核心數據 */
     font-weight: bold;
-    margin-right: 15px;
+    line-height: 1;
 }
 
-.stars { color: #ffbd2e; font-size: 20px; }
+.stars {
+    color: #ffbd2e;       /* 金黃色星星 */
+    font-size: 24px;
+    margin: 10px 0;
+}
 
+/* 我要評論按鈕：維持品牌色 Hover */
 .write-review-btn {
     background: #000;
     color: #fff;
-    padding: 12px 30px;
+    padding: 12px 35px;
     border: none;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
-.write-review-btn:hover { background: #D36A28; }
+.write-review-btn:hover {
+    background: #D36A28;  /* 懸停變橘色 */
+}
 
+/* 4. 評論列表：修正歪斜的關鍵 */
 .review-item {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     padding-bottom: 30px;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0,0,0,0.05); /* 每則評論間的極淡細線 */
 }
 
+/* 用戶資訊欄位 */
 .review-user-info {
     display: flex;
-    align-items: center;
-    gap: 15px;
+    align-items: center;  /* 讓圓形頭像與名字中心對齊 */
+    gap: 20px;
     margin-bottom: 15px;
 }
 
+/* 評論頭像：等比例縮放 */
 .review-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;   /* 圓形裁切 */
+    object-fit: cover;    /* 核心！確保任何比例的照片都不會變形 */
+    background-color: #eee;
 }
 
-.review-user-name { font-weight: bold; display: block; }
-.review-stars { color: #ffbd2e; font-size: 14px; }
-.review-content { font-size: 15px; line-height: 1.6; color: #444; margin-bottom: 10px; }
-.review-date { font-size: 12px; color: #999; }
+.review-user-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.review-stars {
+    color: #ffbd2e;
+    font-size: 14px;
+}
+
+/* 5. 評論文字內容：修正「歪掉」的重要對齊 */
+.review-content {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    padding-left: 80px;   /* 關鍵！讓文字與名字對齊，而不是縮在頭像下面 */
+    max-width: 900px;     /* 限制文字長度以便閱讀 */
+    margin-bottom: 10px;
+}
+
+.review-date {
+    font-size: 12px;
+    color: #999;
+    padding-left: 80px;   /* 日期也同步對齊內容 */
+}
 
 /*按鈕們*/
 .buy-group {
@@ -821,3 +869,4 @@ button {
     }
 
 }
+
