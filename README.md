@@ -1,5 +1,5 @@
 
-# SCRWL - Street Style Brand Website
+# SCRWL - 滑進街頭
 
 SCRWL 是一個由四位中原大學好友共同創立的街頭風格品牌網站專案。我們結合了「玩家視角」與「設計思維」，致力於推廣滑板文化與街頭美學。
 
