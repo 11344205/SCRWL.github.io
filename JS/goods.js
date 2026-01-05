@@ -27,25 +27,25 @@ const database = {
     "n02": {
         name: "Hydroponic x 史努比 Peanuts House Green 8.125\" 整組",
         price: 3500,
-        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和 南歐熱情的迷人魅力。",
+        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和南歐熱情的迷人魅力。",
         images: ["image/new/2.jpg"],
     },
     "n03": {
         name: "Hydroponic x 史努比 Peanuts Skate Yellow 8.0\" 整組",
         price: 3500,
-        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和 南歐熱情的迷人魅力。",
+        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和南歐熱情的迷人魅力。",
         images: ["image/new/3.jpg"],
     },
     "n04": {
         name: "Hydroponic x 海綿寶寶 Sponge Bob Mates 8.0\" 整組",
         price: 3500,
-        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和 南歐熱情的迷人魅力。",
+        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和南歐熱情的迷人魅力。",
         images: ["image/new/4.jpg"],
     },
     "n05": {
         name: "Hydroponic x 海綿寶寶 Sponge Bob Patrick Star 8.125\" 整組",
         price: 3500,
-        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和 南歐熱情的迷人魅力",
+        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和南歐熱情的迷人魅力",
         images:[
             "image/new/5.jpg",
             "image/new/5.1.jpg"
@@ -54,43 +54,43 @@ const database = {
     "n06": {
         name: "Hydroponic x 海綿寶寶 Sponge Bob 8.0\" 整組",
         price: 3500,
-        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和 南歐熱情的迷人魅力。",
+        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和南歐熱情的迷人魅力。",
         images: ["image/new/6.jpg","image/new/6.1.jpg"],
     },
     "n07": {
         name: "Hydroponic x 南方四賤客 South Park Buddies 7.75\" 整組",
         price: 3500,
-        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和 南歐熱情的迷人魅力。",
+        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和南歐熱情的迷人魅力。",
         images: ["image/new/7.jpg","image/new/7.1.jpg","image/new/7.2.jpg"],
     },
     "n08": {
         name: "Hydroponic x 南方四賤客 South Park Stan 8.0\" 整組",
         price: 3500,
-        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和 南歐熱情的迷人魅力。",
+        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和南歐熱情的迷人魅力。",
         images: ["image/new/8.jpg","image/new/8.1.jpg","image/new/8.2.jpg"],
     },
     "n09": {
         name: "Hydroponic x 南方四賤客 South Park Kenny 8.125\" 整組",
         price: 3500,
-        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和 南歐熱情的迷人魅力。",
+        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和南歐熱情的迷人魅力。",
         images: ["image/new/9.jpg","image/new/9.1.jpg","image/new/9.2.jpg"],
     },
     "n10": {
         name: "Hydroponic x 南方四賤客 South Park Gang 8.0\" 整組",
         price: 3500,
-        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和 南歐熱情的迷人魅力。",
+        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和南歐熱情的迷人魅力。",
         images: ["image/new/10.jpg","image/new/10.1.jpg","image/new/10.2.jpg"],
     },
     "n11": {
         name: "Hydroponic Hand Red 8.125\" 整組",
         price: 3300,
-        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和 南歐熱情的迷人魅力。",
+        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和南歐熱情的迷人魅力。",
         images: ["image/new/11.jpg"],
     },
     "n12": {
         name: "Hydroponic Hand Cyan 8.0\" 整組",
         price: 3300,
-        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和 南歐熱情的迷人魅力。",
+        desc:"來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和南歐熱情的迷人魅力。",
         images: ["image/new/12.jpg"],
     },
 
@@ -101,7 +101,7 @@ const database = {
             "基本型輪架 95a Bushings\n"+
             "53mm 100a Conical 輪組\n"+
             "ABEC 7 軸承\n"+
-            "來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和 南歐熱情的迷人魅力。",
+            "來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和南歐熱情的迷人魅力。",
         images: ["image/skateboard/1.jpg"],
     },
     "skb02": {
@@ -113,31 +113,31 @@ const database = {
     "skb03": {
         name: "Globe Huntsman 9.75\" - Bamboo/Play 整組板",
         price: 3500,
-        desc: "為現今最大滑板公司之一，由 Peter、Stephen 及 Matt Hill 三兄弟在 1994 年於澳洲創立，，提供高品質的滑板組件與各式鞋款、服飾配件。",
+        desc: "為現今最大滑板公司之一，由 Peter、Stephen 及 Matt Hill 三兄弟在 1994 年於澳洲創立，提供高品質的滑板組件與各式鞋款、服飾配件。",
         images: ["image/skateboard/3.jpg","image/skateboard/3.1.jpg","image/skateboard/3.2.jpg","image/skateboard/3.3.jpg"],
     },
     "skb04": {
         name: "The Heart Supply Vertical Flow Neon Blue 8.25 超值整組",
         price: 3500,
-        desc: "由 Element 創始人 Johnny Schillereff 與家族成員共同成立，致力於建立一個多元、、創意及包容性的滑板社群，讓更多人能透過滑板找到快樂。",
+        desc: "由 Element 創始人 Johnny Schillereff 與家族成員共同成立，致力於建立一個多元、創意及包容性的滑板社群，讓更多人能透過滑板找到快樂。",
         images: ["image/skateboard/4.jpg","image/skateboard/4.1.jpg"],
     },
     "skb05": {
         name: "The Heart Supply Vertical Flow Neon Green 8.125 超值整組",
         price: 3500,
-        desc: "由 Element 創始人 Johnny Schillereff 與家族成員共同成立，致力於建立一個多元、、創意及包容性的滑板社群，讓更多人能透過滑板找到快樂。",
+        desc: "由 Element 創始人 Johnny Schillereff 與家族成員共同成立，致力於建立一個多元、創意及包容性的滑板社群，讓更多人能透過滑板找到快樂。",
         images: ["image/skateboard/5.jpg","image/skateboard/5.1.jpg"],
     },
     "skb06": {
         name: "The Heart Supply Vertical Flow Neon Pink 8.0 超值整組",
         price: 3500,
-        desc: "The Heart Supply 由 Element 創始人 Johnny Schillereff 與家族成員共同成立，致力於建立一個多元、、創意及包容性的滑板社群，讓更多人能透過滑板找到快樂。",
+        desc: "The Heart Supply 由 Element 創始人 Johnny Schillereff 與家族成員共同成立，致力於建立一個多元、創意及包容性的滑板社群，讓更多人能透過滑板找到快樂。",
         images: ["image/skateboard/6.jpg","image/skateboard/6.1.jpg"],
     },
     "skb07": {
         name: "The Heart Supply Jagger Eaton Neon World Blue 8.25 超值整組",
         price: 3500,
-        desc: "The Heart Supply 由 Element 創始人 Johnny Schillereff 與家族成員共同成立，致力於建立一個多元、、創意及包容性的滑板社群，讓更多人能透過滑板找到快樂。",
+        desc: "The Heart Supply 由 Element 創始人 Johnny Schillereff 與家族成員共同成立，致力於建立一個多元、創意及包容性的滑板社群，讓更多人能透過滑板找到快樂。",
         images: ["image/skateboard/7.jpg","image/skateboard/7.1.jpg"],
     },
     "skb08": {
@@ -173,13 +173,13 @@ const database = {
     "skb13": {
         name: "Hydroponic DBZ 七龍珠 Shenron 8.125' 整組",
         price: 3500,
-        desc: "來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和 南歐熱情的迷人魅力。",
+        desc: "來自於巴塞隆納-Hydroponic (海力龐克)，帶有強烈人文藝術氣息和南歐熱情的迷人魅力。",
         images: ["image/skateboard/13.jpg"],
     },
     "skb14": {
         name: "Girl Carroll Pac-Man 7.75 整組",
         price: 3500,
-        desc: "極高辨識度的 OG 經典滑板品牌，，由職業選手 Rick Howard 與 Mike Carroll 於 1993 年創立，旗下擁有最優秀的團隊陣容，加上同為品牌創辦人之一的奧斯卡級創意導演 - Spike Jonze 之手，Girl 拍攝製作出多部經典滑板影像作品，從 Goldfish、Mouse、Yeah Right 到 Pretty Sweet 等，每部都對滑板界造成了轟動且深遠的影響，是滑板圈重要的創意推手。",
+        desc: "極高辨識度的 OG 經典滑板品牌，由職業選手 Rick Howard 與 Mike Carroll 於 1993 年創立，旗下擁有最優秀的團隊陣容，加上同為品牌創辦人之一的奧斯卡級創意導演 - Spike Jonze 之手，Girl 拍攝製作出多部經典滑板影像作品，從 Goldfish、Mouse、Yeah Right 到 Pretty Sweet 等，每部都對滑板界造成了轟動且深遠的影響，是滑板圈重要的創意推手。",
         images: ["image/skateboard/14.jpg"],
     },
     "skb15": {
@@ -252,7 +252,7 @@ const database = {
     "h10": {
         name: "Brixton Love Packable Bucket - Camo 帽子",
         price: 2200,
-        desc:"起源於南加洲的年輕帽飾品牌, 成立於 2004年，創辦人 David Stoddard，Jason Young，Michael Chapin 三人秉持著高質感的製帽精神, 獨特簡潔的設計風格, 細膩的車工,天然的素材及精緻的內裡, 處處都顯示出 Brixton 的精緻與珍貴。 Brixton 的設計理念大多來自於音樂， 滑板，衝浪，復古機車，與日常生活的點滴， 運用英倫歐風元素呈現整體的層次所在, 唯有真的擁有才能體會其價值所在。",
+        desc:"起源於南加洲的年輕帽飾品牌, 成立於 2004年，創辦人 David Stoddard，Jason Young，Michael Chapin 三人秉持著高質感的製帽精神，獨特簡潔的設計風格，細膩的車工，天然的素材及精緻的內裡， 處處都顯示出 Brixton 的精緻與珍貴。 Brixton 的設計理念大多來自於音樂， 滑板，衝浪，復古機車，與日常生活的點滴， 運用英倫歐風元素呈現整體的層次所在, 唯有真的擁有才能體會其價值所在。",
         images: ["image/hat/10.jpg","image/hat/10.1.jpg"],
     },
     "h11": {
@@ -332,7 +332,7 @@ const database = {
         name: "Volcom Elzo Durt - Blueprint 長袖",
         price: 2100,
         desc:"忠於自我、無所畏懼、勇敢挑戰不可能 來自美國加州，創立於1991，集滑板、滑雪、衝浪、音樂、藝術於一身的品牌，打造出舒適又具潮流感的服飾配件，利用音樂、藝術傳達叛逆、創新、不羈的生活態度，挑戰別人眼中的不可能。",
-        images: ["image/university t/7.jpg",,"image/university t/7.1.jpg","image/university t/7.2.jpg","image/university t/7.3.jpg"],
+        images: ["image/university t/7.jpg","image/university t/7.1.jpg","image/university t/7.2.jpg","image/university t/7.3.jpg"],
     },
     "t08": {
         name: "Thrasher Outlined - Navy/Orange 長袖",
