@@ -609,6 +609,89 @@ button {
     padding-left: 80px;   /* 日期也同步對齊內容 */
 }
 
+.stars-outer {
+  position: relative;
+  display: inline-block;
+  font-size: 24px; /* 星星大小 */
+  color: #ccc;     /* 灰色 */
+}
+
+.stars-outer::before {
+  content: "★★★★★";
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0%;        /* 初始寬度為0，由 JS 控制 */
+  color: #f1c40f;   /* 金黃色 */
+}
+
+.stars-inner::before {
+  content: "★★★★★";
+}
+
+/*評論按鈕的彈出視窗*/
+.modal {
+    display: none; /* 預設隱藏 */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5); /* 背景變暗 */
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.active {
+    display: flex; /* 顯示視窗 */
+    z-index: 2000;
+}
+
+.modal-content {
+    background: #f4f1e6;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content h3{
+    color: #D36A28;
+}
+
+.modal-content input, .modal-content textarea, .modal-content select {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.modal-btns{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.cancel-btn,.submit-btn{
+    display: inline-block;
+    padding: 12px 24px;
+    font-weight: bold;
+    border: 2px solid #333;
+    text-decoration: none;
+    transition: all 0.1s;
+    background-color: #D36A28;
+    color: #fff !important;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.cancel-btn:hover,.submit-btn:hover{
+    transform: translate(-6px, -6px);
+    box-shadow: 8px 8px 0px #333;
+}
+
 /*按鈕們*/
 .buy-group {
     display: flex;
@@ -858,6 +941,7 @@ button {
         padding-left: 10px;
     }
 
+    .product-reviews{
+        width: 80%;
+    }
 }
-
-

@@ -114,26 +114,39 @@
 
                 <div class="rating-summary">
                     <div class="average-score">
-                        <span class="score-num">4.9</span>
-                        <div class="stars">★★★★★</div>
-                        <p>共 12 則評論</p>
+                        <span class="score-num" id="score-num">0.0</span>
+                        <div class="star-rating">
+                            <div class="stars-outer">
+                                <div class="stars-inner" id="stars-inner"></div>
+                            </div>
+                        </div>
+                        <p>共 <span id="review-count">0</span> 則評論</p>
                     </div>
                     <button class="write-review-btn">我要評論</button>
                 </div>
 
-                <div class="reviews-list">
-                    <div class="review-item">
-                        <div class="review-user-info">
-                            <div>
-                                <span class="review-user-name">王曉明</span>
-                                <div class="review-stars">★★★★★</div>
-                            </div>
-                        </div>
-                        <p class="review-content">這款滑板的板身彈性真的沒話說！噴漆圖案細節很到位，完全符合 SCRWL 的街頭精神</p>
-                        <span class="review-date">2024-12-30</span>
-                    </div>
-                </div>
+                <div class="reviews-list" id="reviews-container"></div>
             </section>
+            <div id="review-modal" class="modal">
+                <div class="modal-content">
+                    <h3>撰寫評論</h3>
+                    <form id="review-form">
+                        <input type="text" id="form-name" placeholder="您的姓名" required><br>
+                        <select id="form-stars">
+                            <option value="★★★★★">5 顆星</option>
+                            <option value="★★★★☆">4 顆星</option>
+                            <option value="★★★☆☆">3 顆星</option>
+                            <option value="★★☆☆☆">2 顆星</option>
+                            <option value="★☆☆☆☆">1 顆星</option>
+                        </select><br>
+                        <textarea id="form-content" placeholder="分享您的使用心得..." required></textarea>
+                        <div class="modal-btns">
+                            <button type="button" id="close-modal" class="cancel-btn">取消</button>
+                            <button type="submit" class="submit-btn">送出評論</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </main>
     
 

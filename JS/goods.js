@@ -683,3 +683,142 @@ function updateStorage(key, newItem) {
     }
     localStorage.setItem(key, JSON.stringify(list));
 }
+
+/*評論與評分*/
+const defaultReviews = [
+  {
+    userName: "王曉明",
+    score: 5,
+    stars: "★★★★★",
+    content: "這款滑板的板身彈性真的沒話說！噴漆圖案細節很到位，完全符合 SCRWL 的街頭精神。",
+    date: "2025-12-30"
+  },
+  {
+    userName: "李阿華",
+    score: 4,
+    stars: "★★★★☆",
+    content: "輪組很順滑，但在粗糙路面上稍微有點震。整體設計超酷！",
+    date: "2025-01-02"
+  },
+  {
+    userName: "張大衛",
+    score: 5,
+    stars: "★★★★★",
+    content: "推！出貨速度很快，包裝也非常完整，板面質感比照片還要好。",
+    date: "2025-01-05"
+  }
+];
+let reviewsData = JSON.parse(localStorage.getItem('myReviews')) || defaultReviews;
+
+function saveReviews() {
+    localStorage.setItem('myReviews', JSON.stringify(reviewsData));
+}
+
+function renderReviews(reviews) {
+    const container = document.getElementById('reviews-container');
+    const countSpan = document.getElementById('review-count');
+    
+    container.innerHTML = '';
+    
+    countSpan.textContent = reviews.length;
+
+    reviews.forEach(item => {
+        const reviewHTML = `
+        <div class="review-item">
+            <div class="review-user-info">
+            <div>
+                <span class="review-user-name">${item.userName}</span>
+                <div class="review-stars">${item.stars}</div>
+            </div>
+            </div>
+            <p class="review-content">${item.content}</p>
+            <span class="review-date">${item.date}</span>
+        </div>
+        `;
+        container.innerHTML += reviewHTML;
+    });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const modal = document.getElementById('review-modal');
+        const writeBtn = document.querySelector('.write-review-btn');
+        const closeBtn = document.getElementById('close-modal');
+        const reviewForm = document.getElementById('review-form');
+
+        renderReviews(reviewsData);
+
+        if (writeBtn) {
+            writeBtn.onclick = () => modal.classList.add('active');
+        }
+
+        if (closeBtn) {
+            closeBtn.onclick = () => modal.classList.remove('active');
+        }
+
+    if (reviewForm) {
+        reviewForm.onsubmit = (e) => {
+            e.preventDefault();
+
+            const starMap = {
+                "★★★★★": 5,
+                "★★★★☆": 4,
+                "★★★☆☆": 3,
+                "★★☆☆☆": 2,
+                "★☆☆☆☆": 1
+            };
+            const selectedStars = document.getElementById('form-stars').value;
+
+            const newReview = {
+                userName: document.getElementById('form-name').value,
+                score: starMap[selectedStars],
+                stars: document.getElementById('form-stars').value,
+                content: document.getElementById('form-content').value,
+                date: new Date().toISOString().split('T')[0]
+            };
+            reviewsData.unshift(newReview);
+            saveReviews();
+            renderReviews(reviewsData);
+            updateRating();
+
+            reviewForm.reset();
+            modal.classList.remove('active');
+
+            document.getElementById('reviews-container').scrollIntoView({ 
+                behavior: 'smooth', 
+                block: 'start' 
+            });
+
+            setTimeout(() => {
+                alert("感謝您的評論！");
+            }, 500);
+        };
+    }
+    renderReviews(reviewsData);
+    updateRating();
+});
+
+
+function updateRating() {
+    const scoreNumElement = document.getElementById('score-num');
+    const reviewCountElement = document.getElementById('review-count');
+    const starsInner = document.getElementById('stars-inner');
+
+    if (reviewsData.length === 0) {
+        scoreNumElement.innerText = "0.0";
+        reviewCountElement.innerText = "0";
+        starsInner.style.width = "0%";
+        return;
+    }
+
+    // 1. 從 reviewsData 中取出所有 score 並計算平均
+    const total = reviewsData.reduce((sum, item) => sum + item.score, 0);
+    const average = (total / reviewsData.length).toFixed(1);
+
+    // 2. 更新畫面數字
+    scoreNumElement.innerText = average;
+    reviewCountElement.innerText = reviewsData.length;
+
+    // 3. 更新半顆星遮罩寬度 (平均分 / 5 * 100)
+    const starPercentage = (average / 5) * 100;
+    starsInner.style.width = `${starPercentage}%`;
+}
