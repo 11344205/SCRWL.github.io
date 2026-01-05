@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const product = {
                 id: card.dataset.id,
                 name: card.dataset.name,
+                price: parseInt(card.dataset.price),
                 img: card.querySelector('img').src
             };
 
@@ -76,4 +77,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         localStorage.setItem(key, JSON.stringify(list));
     }
+
 });
