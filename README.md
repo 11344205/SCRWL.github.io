@@ -25,9 +25,11 @@ SCRWL 是一個由四位中原大學好友共同創立的街頭風格品牌網�
   - 使用 LocalStorage 保存購物車內容。
   - 支援商品數量增減與移除。
   - 自動計算總金額。
+- **我的最愛 (Wishlist) 功能**：
+  - 支援商品加入與移除。
 - **會員功能**：
   - 會員登入/註冊介面。
-  - 我的最愛 (Wishlist) 功能。
+  - 會員資料介面。
 - **關於我們**：
   - 品牌故事介紹。
   - **Meet The Team**：展示團隊成員分工與心得 (動態 Grid 排版)。
@@ -39,14 +41,14 @@ SCRWL 是一個由四位中原大學好友共同創立的街頭風格品牌網�
 
 ## 使用技術
 
-- **HTML5**：語意化標籤結構。
-- **CSS3**：
+- **HTML**：語意化標籤結構。
+- **CSS**：
   - Flexbox & Grid 佈局。
   - CSS Animation (輪播圖、文字跑馬燈)。
   - RWD 媒體查詢 (Media Queries)。
   - Google Fonts (Permanent Marker, Noto Sans TC)。
   - Font Awesome 圖示庫。
-- **JavaScript (Vanilla JS)**：
+- **JavaScript**：
   - DOM 操作。
   - Event Handling。
   - LocalStorage 資料存取 (購物車與收藏功能)。
