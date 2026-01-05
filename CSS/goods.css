@@ -505,6 +505,71 @@ button {
     outline: none;
     padding-left: 10px;
 }
+/* --- 商品評論區專屬 --- */
+.product-reviews {
+    margin-top: 80px;
+    padding-top: 50px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.reviews-title {
+    font-family: "Permanent Marker", cursive;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.rating-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.score-num {
+    font-size: 48px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.stars { color: #ffbd2e; font-size: 20px; }
+
+.write-review-btn {
+    background: #000;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.write-review-btn:hover { background: #D36A28; }
+
+.review-item {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.review-user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.review-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-user-name { font-weight: bold; display: block; }
+.review-stars { color: #ffbd2e; font-size: 14px; }
+.review-content { font-size: 15px; line-height: 1.6; color: #444; margin-bottom: 10px; }
+.review-date { font-size: 12px; color: #999; }
 
 /*按鈕們*/
 .buy-group {
@@ -754,4 +819,5 @@ button {
     .product-info{
         padding-left: 10px;
     }
+
 }
